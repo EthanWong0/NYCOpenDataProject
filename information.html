@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <script src="components.js"></script>
+</head>
+<body onload="init()">
+    <div class="container">
+    <div class="column"><a href="index.html">Home</a></div>
+    <div class="column"><a href="information.html">Information</a></div>
+    <div class="column"><a href="analysis.html">Placeholder</a></div>
+    <div class="column"></div><a href="Placeholder">Placeholder</a></div>
+    </div>
+    <hr>
+     <div>
+    <h1 class="title">Open Parking and Camera Violations</h1>
+    </div>
+    <div>
+        <input type="text" placeholder="Plate" id="plate">
+        <input type="text" placeholder="State" id="state">
+        <input type="text" placeholder="Violation" id="violation">
+        <input type="button" value="Search" onclick="violations()">
+        <p>This webpage will allow you to generate cards based on the data from Open Parking and Camera Violations. </p>
+        <h2>INSTRUCTIONS</h2>
+        <p>Input only one search option at a time, otherwise it will only pick one. In order to use these input a specific type of violation, plate number, or state abbreviation in caps depending on the type of data you want to search by. Once done, click the Search button in order to generate cards detailing data such as the violation, which state it happened in, the plate number and the amount fined. If an image exists, you may click a card in order to view the full details of the violation report through a modal.</p>
+    </div>
+    <div class="text" id="output">
+ 
+
+
+    </div>
+
+
+   
+</body>
+</html>

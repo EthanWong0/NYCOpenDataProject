@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+    <link href="c3-eb4b9be8.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="c3.min-d2a1f852.js"></script>
+    <script src="d3-5.8.2.min-c5268e33.js"></script>
+    <script src="graph.js"></script>
+    <script src="helper.js"></script>
+    
+
+</head>
+<body onload="init()">
+    <div class="container">
+    <div class="column"><a href="HomePage">Home</a></div>
+    <div class="column"><a href="View/Filter Information">Information</a></div>
+    <div class="column"><a href="Placeholder">Placeholder</a></div>
+    <div class="column"></div><a href="Placeholder">Placeholder</a></div>
+    </div>
+    <hr>
+     <div>
+    <h1 class="title">Open Parking and Camera Violations</h1>
+    </div>
+    <div>
+        <div class="card">
+          <h3>Select Chart Type</h3>
+          <select id="chartType" style="width:200px;">
+            <option value="bar">Select Chart Type</option>
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+          </select>
+        </div>
+        <input type="button" value="Graph Violations By State" onclick="violationsByState()">
+        <input type="button" value="Graph Violations By Type" onclick="violationsByType()">
+        <input type="button" value="Graph Violations By Agency" onclick="violationsByAgency()">
+        <p>This webpage will allow users to select one of two types of graphs for the data from NYC Open Data, a Bar or Pie graph. Users may graph data based on the type of violation, how many violations each state has, and the agencies that issued these violations. The bar graph will show the amount of each type of data there is, and the bar graph will display percentages of the data to see what makes it up.
+    </div>
+    <div class="text" id="chart">
+ 
+
+
+    </div>
+
+
+   
+</body>
+</html>
