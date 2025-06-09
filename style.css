@@ -17,10 +17,6 @@ iframe{
   height:700px;
 }
 
-div{
-  flex:1;
-  display:flex;
-}
 
 .center{
 	justify-content:center;
